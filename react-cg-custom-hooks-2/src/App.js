@@ -19,6 +19,7 @@ function App() {
 
       setTasks(loadedTasks);
     };
+
     fetchTasks(
       {
         url: "https://react-custom-hook-http-e71ba-default-rtdb.firebaseio.com/tasks.json",
