@@ -1,8 +1,17 @@
 import MeetupList from "../components/meetups/MeetupList";
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 
 const HomePage = (props) => {
-  return <MeetupList meetups={props.meetups} />;
+  return (
+    <>
+      <Head>
+        <title>Next JS Meetups App</title>
+        <meta name="description" content="Blah blah blah" />
+      </Head>
+      <MeetupList meetups={props.meetups} />
+    </>
+  );
 };
 
 // export const getServerSideProps = async (context) => {
